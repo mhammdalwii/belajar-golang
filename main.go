@@ -1,7 +1,7 @@
 package main
 
 import (
-	"jalcode-api/config" 
+	"jalcode-api/config"
 	"jalcode-api/models"
 	"jalcode-api/routes"
 	"net/http"
@@ -31,6 +31,7 @@ func main() {
 
 	// route tim di sini
 	routes.SetupTeamRoutes(r)
+	routes.SetupProjectRoutes(r)
 
 	//  server di port 8080
 	r.Run(":8080")
