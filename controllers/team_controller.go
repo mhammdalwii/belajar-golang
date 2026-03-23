@@ -8,6 +8,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// GetTeamMembers godoc
+// @Summary Mengambil semua data anggota tim
+// @Description Mendapatkan daftar lengkap semua tim beserta role-nya
+// @Tags Teams
+// @Produce json
+// @Success 200 {object} map[string]interface{}
+// @Router /api/teams/ [get]
 // Mengambil semua data anggota tim
 func GetTeamMembers(c *gin.Context) {
 	var teams []models.TeamMember
